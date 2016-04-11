@@ -160,9 +160,14 @@ EOM;
         <a class="x-download"
             href="<?php echo video_url($show, true) ?>" title="<?php echo t('ASX Stream'); ?>"
             ><img height="24" width="24" src="<?php echo skin_url ?>/img/play_sm.png" alt="<?php echo t('ASX Stream'); ?>"></a>
-        <a class="x-download"
+<!--        <a class="x-download"
             href="<?php echo $show->url ?>" title="<?php echo t('Direct Download'); ?>"
             ><img height="24" width="24" src="<?php echo skin_url ?>/img/video_sm.png" alt="<?php echo t('Direct Download'); ?>"></a>
+-->
+        <a class="x-download"
+            target="_blank"
+            href="<?php echo root_url ?>Content/GetRecording?RecordedId=<?php echo $show->recordedid ?>" title="<?php echo t('Direct Play'); ?>"
+            ><img height="24" width="24" src="<?php echo skin_url ?>/img/video_sm.png" alt="<?php echo t('Direct Play'); ?>"></a>
         </td>
     <td class="x-title"><?php echo '<a href="', root_url, 'tv/detail/', $show->chanid, '/', $show->recstartts, '"'
                     .($_SESSION['recorded_pixmaps'] ? '' : " name=\"$row\"")
