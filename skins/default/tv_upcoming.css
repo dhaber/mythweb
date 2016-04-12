@@ -1,3 +1,9 @@
+.scheduled:hover, .scheduled:hover .x-title, .scheduled:hover .x-title a, .scheduled:hover .x-status {
+    background-color: white;
+    color: black;
+    font-weight: 400;
+}
+
 #display_options {
     margin:     1em auto;
 }
