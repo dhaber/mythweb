@@ -185,7 +185,7 @@ EOM;
                     title="<?php echo t('Details for: $1', html_entities($show->channel->name)) ?>">
                     <img class="channelicon" src="<?php echo $show->channel->icon ?>"></a></td><?php
         } else { ?>
-    <td class="x-channum" rowspan="2"><?php echo $show->channel->channum, ' - ', $show->channel->name ?></td><?php
+    <td class="x-channum" rowspan="2"><?php echo $show->channel->channum, ' - ', $show->channel->name, ' <br/>', $show->inputname ?></td><?php
         }
     if ($recgroup_cols)
         echo "    <td class=\"-recgroup\">$show->recgroup</td>\n";
